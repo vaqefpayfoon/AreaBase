@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-AreaBase-D996AF4F-2AF6-4B6C-97D0-57D581F0E380</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\**" />
+    <Content Remove="Controllers\**" />
+    <EmbeddedResource Remove="Controllers\**" />
+    <None Remove="Controllers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20200829161551_MenuItem.cs" />
+    <Compile Remove="Data\Migrations\20200829161551_MenuItem.Designer.cs" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.0-preview1.19506.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0-preview1-19509-03" />
+    <PackageReference Include="SendGrid" Version="9.21.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Include="Areas\Admin\Views\Coupon\Create.cshtml" />
+    <None Include="Areas\Admin\Views\Coupon\Delete.cshtml" />
+    <None Include="Areas\Admin\Views\Coupon\Details.cshtml" />
+    <None Include="Areas\Admin\Views\Coupon\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\Coupon\Index.cshtml" />
+    <None Include="Areas\Admin\Views\MenuItem\Create.cshtml" />
+    <None Include="Areas\Admin\Views\MenuItem\Delete.cshtml" />
+    <None Include="Areas\Admin\Views\MenuItem\Details.cshtml" />
+    <None Include="Areas\Admin\Views\MenuItem\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\MenuItem\Index.cshtml" />
+    <None Include="Areas\Admin\Views\User\Index.cshtml" />
+    <None Include="Areas\Customer\Views\Cart\Index.cshtml" />
+    <None Include="Areas\Customer\Views\Cart\Summary.cshtml" />
+    <None Include="Areas\Customer\Views\Order\Confirm.cshtml" />
+    <None Include="Areas\Customer\Views\Order\OrderHistory.cshtml" />
+    <None Include="Views\Shared\Components\UserName\Default.cshtml" />
+  </ItemGroup>
+
+</Project>
